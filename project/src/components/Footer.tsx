@@ -56,8 +56,8 @@ const Footer = () => {
             <div className="space-y-4 text-gray-300">
               <div>
                 <p className="font-medium">Email</p>
-                <a href="mailto:joe@EZAISolutions.com" className="hover:text-teal-400 transition-colors">
-                  joe@EZAISolutions.com
+                <a href="mailto:admin@ezaisolutions.com" className="hover:text-teal-400 transition-colors">
+                  admin@ezaisolutions.com
                 </a>
               </div>
               <div>
