@@ -5,8 +5,8 @@ const Insights = () => {
   const capabilities = [
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Global Expertise",
-      description: "International experience across diverse markets and regulatory environments"
+      title: "Comprehensive Solutions",
+      description: "End-to-end AI consulting from strategy development to implementation"
     },
     {
       icon: <Zap className="w-6 h-6" />,
