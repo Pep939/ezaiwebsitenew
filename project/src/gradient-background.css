@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    /* Vibrant diagonal gradient inspired by eztorqueai.com */
+    background: linear-gradient(135deg, #4c2fca 0%, #00cffe 100%);
+    background-attachment: fixed; /* keep gradient static while scrolling */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #fff; /* default text white for better contrast */
+}
+
+/* Override text colors in gradient sections */
+.hero *,
+.services *,
+.features p,
+.features h4 {
+    color: #ffffff !important;
+}
+
+.features .feature-item i {
+    color: #ffffff !important;
+}
+
+/* Preserve accent colors */
+.service-icon,
+.btn-white,
+.cta-button,
+.cta-section {
+    color: inherit;
+}
+
+/* Keep navigation text dark since header is white */
+.header .nav-links a,
+.header .cta-button {
+    color: var(--text-dark);
+}
+
+.header .logo {
+    color: var(--primary);
+}
+
+/* Adjustments for the embedded GHL contact form */
+.contact-form {
+    max-width: 100%; /* Override any parent constraints */
+    width: 100%;
+    height: 700px; /* Ensure enough height for the iframe content */
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contact section uses .services class but needs dark text */
+#contact * {
+    color: var(--text-dark) !important;
+}
+
