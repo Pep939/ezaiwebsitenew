@@ -1,4 +1,3 @@
-import React from 'react';
 import { Target, MessageSquare, Settings, Zap, Shield, BarChart3, ArrowRight } from 'lucide-react';
 
 const Insights = () => {
@@ -54,7 +53,7 @@ const Insights = () => {
               Through Intelligent AI
             </span>
           </h3>
-          <a href="#contact" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-400 text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-400 text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
             <span>Discuss Your Project</span>
             <ArrowRight className="w-5 h-5" />
           </a>

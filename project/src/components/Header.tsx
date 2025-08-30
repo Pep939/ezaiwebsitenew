@@ -36,7 +36,7 @@ const Header = () => {
             <Phone className="w-4 h-4" />
             <span className="text-sm">+1 888-392-4385</span>
           </a>
-          <a href="#contact" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-gray-100 hover:scale-105">
+          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-gray-100 hover:scale-105">
             Book a Demo
           </a>
         </div>
@@ -63,7 +63,7 @@ const Header = () => {
                 <Phone className="w-4 h-4" />
                 <span>+1 888-392-4385</span>
               </a>
-              <a href="#contact" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm">
+              <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm">
                 Book a Demo
               </a>
             </div>

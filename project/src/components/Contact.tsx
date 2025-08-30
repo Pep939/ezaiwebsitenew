@@ -63,10 +63,14 @@ const Contact = () => {
               <p className="text-gray-300">Book a free 30-minute strategy session to discuss your AI transformation</p>
             </div>
             
-            {/* Calendly Embed */}
-            <div className="calendly-inline-widget" 
-                 data-url="https://calendly.com/joe-ezaisolutions/30min" 
-                 style={{minWidth: '320px', height: '630px'}}></div>
+            {/* Cal.com Embed */}
+            <iframe 
+              src="https://cal.com/ezaisolutions/30min"
+              width="100%" 
+              height="630"
+              frameBorder="0"
+              className="rounded-lg"
+            ></iframe>
           </div>
         </div>
       </div>

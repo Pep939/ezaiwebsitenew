@@ -29,7 +29,7 @@ const CTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="#contact" className="group bg-white text-black px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:bg-gray-100 hover:scale-105 flex items-center justify-center gap-3">
+          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="group bg-white text-black px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:bg-gray-100 hover:scale-105 flex items-center justify-center gap-3">
             <span>Start Your AI Journey</span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </a>

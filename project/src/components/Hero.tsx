@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
-              <a href="#contact" className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-gray-100 flex items-center justify-center gap-2 sm:gap-3">
+              <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-gray-100 flex items-center justify-center gap-2 sm:gap-3">
                 <span>Start Your AI Journey</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>

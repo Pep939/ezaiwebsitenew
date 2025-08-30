@@ -30,11 +30,6 @@ function App() {
 
     document.addEventListener('click', handleClick);
 
-    // Load Calendly script
-    const calendlyScript = document.createElement('script');
-    calendlyScript.src = 'https://assets.calendly.com/assets/external/widget.js';
-    calendlyScript.async = true;
-    document.head.appendChild(calendlyScript);
 
     return () => {
       document.removeEventListener('click', handleClick);
