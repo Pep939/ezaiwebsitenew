@@ -44,47 +44,47 @@ const Approach = () => {
           <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-4">
             OUR METHODOLOGY
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
             Proven AI
             <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
               Implementation
             </span>
             Framework
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Our systematic approach ensures successful AI adoption with minimal risk and maximum business impact.
           </p>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {phases.map((phase, index) => (
             <div key={index} className="group">
-              <div className="grid lg:grid-cols-12 gap-8 items-center">
-                <div className="lg:col-span-2">
-                  <div className="text-6xl lg:text-8xl font-bold text-transparent bg-gradient-to-br from-teal-400 to-blue-400 bg-clip-text group-hover:scale-110 transition-transform duration-500">
+              <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 lg:items-center">
+                <div className="lg:col-span-2 text-center lg:text-left">
+                  <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-br from-teal-400 to-blue-400 bg-clip-text group-hover:scale-110 transition-transform duration-500">
                     {phase.number}
                   </div>
                 </div>
                 
-                <div className="lg:col-span-6 space-y-4">
-                  <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-teal-400 transition-colors duration-300">
+                <div className="lg:col-span-6 space-y-3 md:space-y-4 text-center lg:text-left">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold group-hover:text-teal-400 transition-colors duration-300">
                     {phase.title}
                   </h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                     {phase.description}
                   </p>
                 </div>
                 
                 <div className="lg:col-span-4">
-                  <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 group-hover:border-teal-400/30 transition-all duration-300">
-                    <h4 className="text-sm font-semibold text-teal-400 mb-4 tracking-wide uppercase">
+                  <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 md:p-6 group-hover:border-teal-400/30 transition-all duration-300">
+                    <h4 className="text-xs md:text-sm font-semibold text-teal-400 mb-3 md:mb-4 tracking-wide uppercase text-center lg:text-left">
                       Key Deliverables
                     </h4>
-                    <div className="space-y-3">
+                    <div className="space-y-2 md:space-y-3">
                       {phase.deliverables.map((deliverable, idx) => (
-                        <div key={idx} className="flex items-center gap-3">
-                          <CheckCircle className="w-4 h-4 text-teal-400 flex-shrink-0" />
-                          <span className="text-gray-300 text-sm">{deliverable}</span>
+                        <div key={idx} className="flex items-center gap-2 md:gap-3 justify-center lg:justify-start">
+                          <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-teal-400 flex-shrink-0" />
+                          <span className="text-gray-300 text-xs md:text-sm">{deliverable}</span>
                         </div>
                       ))}
                     </div>
@@ -93,8 +93,8 @@ const Approach = () => {
               </div>
               
               {index < phases.length - 1 && (
-                <div className="flex justify-center mt-12">
-                  <ArrowRight className="w-6 h-6 text-gray-600 rotate-90" />
+                <div className="flex justify-center mt-8 md:mt-12">
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-gray-600 rotate-90" />
                 </div>
               )}
             </div>

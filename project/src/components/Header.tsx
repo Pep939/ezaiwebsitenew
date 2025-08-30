@@ -27,7 +27,7 @@ const Header = () => {
           <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">HOME</a></li>
           <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONSULTING</a></li>
           <li><a href="#approach" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">APPROACH</a></li>
-          <li><a href="#insights" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">INSIGHTS</a></li>
+          <li><a href="#insights" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">SERVICES</a></li>
           <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONTACT</a></li>
         </ul>
         
@@ -56,7 +56,7 @@ const Header = () => {
             <a href="#home" className="block text-gray-300 hover:text-white transition-colors">HOME</a>
             <a href="#services" className="block text-gray-300 hover:text-white transition-colors">CONSULTING</a>
             <a href="#approach" className="block text-gray-300 hover:text-white transition-colors">APPROACH</a>
-            <a href="#insights" className="block text-gray-300 hover:text-white transition-colors">INSIGHTS</a>
+            <a href="#insights" className="block text-gray-300 hover:text-white transition-colors">SERVICES</a>
             <a href="#contact" className="block text-gray-300 hover:text-white transition-colors">CONTACT</a>
             <div className="pt-4 border-t border-gray-800">
               <a href="tel:+18883924385" className="flex items-center gap-2 text-teal-400 mb-4">

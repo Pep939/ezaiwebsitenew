@@ -60,27 +60,25 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="group relative">
-              <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 p-8 rounded-2xl hover:border-teal-400/50 transition-all duration-500 hover:-translate-y-2 h-full">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center text-black group-hover:scale-110 transition-transform duration-300">
-                    {service.icon}
+            <div key={index} className="group">
+              <div className="text-center mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-blue-400 rounded-full flex items-center justify-center text-black mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-teal-400 transition-colors duration-300">{service.title}</h3>
+              </div>
+              
+              <p className="text-gray-300 mb-6 leading-relaxed text-center">{service.description}</p>
+              
+              <div className="space-y-3">
+                {service.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-center justify-center gap-3">
+                    <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                    <span className="text-gray-400">{feature}</span>
                   </div>
-                  <h3 className="text-xl font-bold">{service.title}</h3>
-                </div>
-                
-                <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
-                
-                <div className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 bg-teal-400 rounded-full"></div>
-                      <span className="text-sm text-gray-400">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+                ))}
               </div>
             </div>
           ))}
