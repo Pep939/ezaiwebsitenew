@@ -12,14 +12,14 @@ const Hero = () => {
         <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-teal-300 rounded-full"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
-          <div className="space-y-8">
-            <div className="space-y-2">
-              <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-24 sm:pt-32 pb-16 sm:pb-20 relative z-10">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[60vh] sm:min-h-[80vh]">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
+            <div className="space-y-4">
+              <p className="text-teal-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">
                 ARTIFICIAL INTELLIGENCE CONSULTING
               </p>
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Transform Your
                 <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
                   Business Strategy
@@ -28,18 +28,18 @@ const Hero = () => {
               </h1>
             </div>
             
-            <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
               We help enterprises navigate the AI revolution with strategic consulting, 
               implementation roadmaps, and transformative solutions that deliver measurable ROI.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#contact" className="group bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-gray-100 flex items-center justify-center gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
+              <a href="#contact" className="group bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-gray-100 flex items-center justify-center gap-2 sm:gap-3">
                 <span>Start Your AI Journey</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#approach" className="group border border-gray-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:border-teal-400 hover:bg-teal-400/10 flex items-center justify-center gap-3">
-                <Play className="w-4 h-4" />
+              <a href="#approach" className="group border border-gray-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:border-teal-400 hover:bg-teal-400/10 flex items-center justify-center gap-2 sm:gap-3">
+                <Play className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>See Our Approach</span>
               </a>
             </div>
