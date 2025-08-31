@@ -16,19 +16,19 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-black/95 backdrop-blur-xl py-4' : 'bg-transparent py-6'
-    }`}>
+      isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
+    } pt-16 md:pt-20 pb-6`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center">
-          {/* Much larger at top, shrinks on scroll for usability */}
+        <div className="flex items-center overflow-visible pr-4 md:pr-8 relative z-0 h-14 w-14">
+          {/* Visually enlarge without changing layout height; absolute for precise alignment */}
           <img
             src={logo}
             alt="EZ AI Solutions"
-            className={`${isScrolled ? 'h-16 md:h-20' : 'h-40 md:h-48'} w-auto transition-all duration-300`}
+            className={`absolute left-0 top-0 h-12 md:h-12 scale-[8] md:scale-[9] origin-top-left w-auto transition-transform duration-300 pointer-events-none z-20 -translate-x-[56px] md:-translate-x-[64px] -translate-y-[220px] md:-translate-y-[204px]`}
           />
         </div>
         
-        <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
+        <ul className="hidden lg:flex items-center gap-12 text-sm font-medium ml-16 md:ml-24 relative z-10">
           <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">HOME</a></li>
           <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONSULTING</a></li>
           <li><a href="#approach" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">APPROACH</a></li>

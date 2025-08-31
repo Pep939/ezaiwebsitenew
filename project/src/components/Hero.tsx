@@ -3,7 +3,7 @@ import heroImage from '../assets/hero-image.jpg';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-black text-white relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-black text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-2 h-2 bg-teal-400 rounded-full"></div>
@@ -19,16 +19,16 @@ const Hero = () => {
               <p className="text-teal-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">
                 ARTIFICIAL INTELLIGENCE CONSULTING
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold leading-snug">
                 Transform Your
-                <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
+                <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text pb-1">
                   Business Strategy
                 </span>
                 with AI
               </h1>
             </div>
             
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               We help enterprises navigate the AI revolution with strategic consulting, 
               implementation roadmaps, and transformative solutions that deliver measurable ROI.
             </p>

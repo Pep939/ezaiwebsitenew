@@ -30,7 +30,7 @@ const Approach = () => {
   ];
 
   return (
-    <section id="approach" className="py-32 bg-gray-950 text-white relative overflow-hidden">
+    <section id="approach" className="py-32 bg-gray-950 text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

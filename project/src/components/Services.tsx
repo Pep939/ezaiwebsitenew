@@ -1,4 +1,3 @@
-import React from 'react';
 import { Brain, Zap, Target, Users, Shield, Workflow } from 'lucide-react';
 
 const Services = () => {
@@ -42,7 +41,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 bg-black text-white relative">
+    <section id="services" className="py-32 bg-black text-white relative scroll-mt-28 md:scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-4">
