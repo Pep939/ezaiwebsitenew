@@ -20,7 +20,12 @@ const Header = () => {
     }`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="EZ AI Solutions" className="h-10 w-auto" />
+          {/* Much larger at top, shrinks on scroll for usability */}
+          <img
+            src={logo}
+            alt="EZ AI Solutions"
+            className={`${isScrolled ? 'h-16 md:h-20' : 'h-40 md:h-48'} w-auto transition-all duration-300`}
+          />
         </div>
         
         <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
