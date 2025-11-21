@@ -1,77 +1,113 @@
-import { Target, MessageSquare, Settings, Zap, Shield, BarChart3, ArrowRight } from 'lucide-react';
+import React from 'react';
 
 const Insights = () => {
-  const capabilities = [
+  const examples = [
     {
-      icon: <Target className="w-6 h-6" />,
-      title: "AI Strategy & Implementation",
-      subtitle: "Turn AI concepts into profitable reality",
-      description: "90-day strategic roadmaps with measurable ROI targets and phased implementation approach that minimizes risk while maximizing impact."
+      industry: 'Property Management',
+      business: '15-unit portfolio in Monterey',
+      problem: 'Spending 30+ hours/month on tenant screening, maintenance requests, and rent collection',
+      solution: 'Automated tenant portal, maintenance routing, and payment reminders',
+      results: {
+        timeSaved: '25 hrs/month',
+        setupCost: '$6,500',
+        monthlySavings: '$1,250',
+        roi: '5 months'
+      }
     },
     {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: "Voice AI Integration",
-      subtitle: "Your customers' new favorite support agent",
-      description: "Intelligent voice assistants that handle customer inquiries, book appointments, and manage support tickets - reducing response times by 90% while maintaining human-quality interactions."
+      industry: 'Vacation Rental Management',
+      business: '25 properties in Carmel & Monterey',
+      problem: 'New county regulations require tracking permits, TOT filings, and coastal certifications',
+      solution: 'Compliance dashboard with deadline reminders and document repository',
+      results: {
+        timeSaved: '20 hrs/month',
+        setupCost: '$7,500',
+        avoidedFines: '$15,000+',
+        roi: 'Immediate'
+      }
     },
     {
-      icon: <Settings className="w-6 h-6" />,
-      title: "Workflow Automation & Integration",
-      subtitle: "Connect everything, automate anything",
-      description: "Seamless integration between your existing systems - CRM, calendars, databases, and third-party tools - creating intelligent workflows that eliminate manual tasks and human error."
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Rapid Value Delivery",
-      subtitle: "Results in weeks, not months",
-      description: "Pilot programs and proof-of-concepts that demonstrate clear value within 30 days, followed by scalable enterprise rollouts with predictable outcomes."
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Enterprise Security & Compliance",
-      subtitle: "Secure AI implementations you can trust",
-      description: "Industry-standard security protocols and compliance frameworks ensuring your AI solutions protect sensitive data and meet regulatory requirements."
-    },
-    {
-      icon: <BarChart3 className="w-6 h-6" />,
-      title: "Performance Analytics & Optimization",
-      subtitle: "Continuous improvement through data",
-      description: "Real-time dashboards and AI performance metrics that track cost savings, efficiency gains, and customer satisfaction improvements across all automated processes."
+      industry: 'Accounting Firm',
+      business: 'Small firm in Salinas',
+      problem: 'Chasing clients for documents, missing tax deadlines, manual invoice tracking',
+      solution: 'Client portal, automated document requests, deadline tracking system',
+      results: {
+        timeSaved: '18 hrs/month',
+        setupCost: '$6,000',
+        clientCapacity: '+30%',
+        roi: '4 months'
+      }
     }
   ];
 
   return (
-    <section id="insights" className="py-32 bg-black text-white relative">
+    <section id="insights" className="py-32 bg-black text-white scroll-mt-28 md:scroll-mt-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-4">
-            OUR EXPERTISE
+            REAL RESULTS
           </p>
-          <h3 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-            Transforming Business Operations
+          <h3 className="text-4xl font-bold mb-6 leading-tight">
+            What Monterey Businesses
             <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
-              Through Intelligent AI
+              Actually Save
             </span>
           </h3>
-          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-400 text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
-            <span>Discuss Your Project</span>
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            These are real projects for Monterey County businesses. Numbers are actual time and cost savings.
+          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {capabilities.map((capability, index) => (
-            <div key={index} className="group bg-gray-900/50 p-6 rounded-2xl border border-gray-800 hover:border-teal-400/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center text-black mb-4 group-hover:scale-110 transition-transform duration-300">
-                {capability.icon}
+        <div className="space-y-8 mb-16">
+          {examples.map((example, index) => (
+            <div key={index} className="bg-gray-900/50 border border-gray-800 rounded-2xl p-8">
+              <div className="flex flex-col lg:flex-row gap-8">
+                <div className="lg:w-1/2 space-y-4">
+                  <div className="inline-block bg-teal-400/10 border border-teal-400/20 rounded-lg px-4 py-2">
+                    <span className="text-teal-400 font-semibold text-sm">{example.industry}</span>
+                  </div>
+                  <h4 className="text-xl font-bold">{example.business}</h4>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-gray-400 text-sm uppercase tracking-wide mb-2">The Problem</p>
+                      <p className="text-gray-300">{example.problem}</p>
+                    </div>
+                    
+                    <div>
+                      <p className="text-gray-400 text-sm uppercase tracking-wide mb-2">The Solution</p>
+                      <p className="text-gray-300">{example.solution}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="lg:w-1/2">
+                  <p className="text-gray-400 text-sm uppercase tracking-wide mb-4">Results</p>
+                  <div className="grid grid-cols-2 gap-4">
+                    {Object.entries(example.results).map(([key, value], idx) => (
+                      <div key={idx} className="bg-gray-950/50 rounded-xl p-4 border border-gray-800">
+                        <div className="flex items-center gap-2 text-teal-400 mb-2">
+                          <span className="text-xs uppercase">{key.replace(/([A-Z])/g, ' $1').trim()}</span>
+                        </div>
+                        <p className="text-2xl font-bold">{value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <h4 className="text-lg font-semibold mb-2 group-hover:text-teal-400 transition-colors duration-300">
-                {capability.title}
-              </h4>
-              <p className="text-teal-300 text-sm font-medium mb-3">{capability.subtitle}</p>
-              <p className="text-gray-400 leading-relaxed text-sm">{capability.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="bg-gradient-to-r from-teal-400/10 to-blue-400/10 border border-teal-400/20 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-4">Want to See Your Numbers?</h3>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Tell us what manual work is eating up your time. We'll calculate how much you could save 
+            and give you a fixed-price quote.
+          </p>
+          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-400 text-black px-8 py-4 rounded-full font-semibold transition-all hover:scale-105">
+            <span>Calculate Your Savings →</span>
+          </a>
         </div>
       </div>
     </section>

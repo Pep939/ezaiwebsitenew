@@ -1,104 +1,111 @@
-import React from 'react';
-import { CheckCircle, ArrowRight } from 'lucide-react';
-
 const Approach = () => {
-  const phases = [
+  const steps = [
     {
-      number: "01",
-      title: "Discovery & Assessment",
-      description: "Deep dive into your current processes, technology stack, and business objectives to identify AI opportunities.",
-      deliverables: ["Current State Analysis", "AI Readiness Assessment", "Opportunity Mapping"]
+      number: '01',
+      emoji: '📞',
+      title: '15-Minute Discovery Call',
+      description: 'We learn about your manual processes, pain points, and what\'s eating up your team\'s time.',
+      timeline: 'Week 1',
+      deliverable: 'Clear scope and fixed price quote'
     },
     {
-      number: "02", 
-      title: "Strategy Development",
-      description: "Create a comprehensive AI roadmap with clear milestones, resource requirements, and success metrics.",
-      deliverables: ["AI Strategy Document", "Implementation Roadmap", "ROI Projections"]
+      number: '02',
+      emoji: '🔧',
+      title: 'Build Your Automation',
+      description: 'We build the workflows, connect your systems, and test everything with your team.',
+      timeline: 'Week 2-3',
+      deliverable: 'Custom automation ready to deploy'
     },
     {
-      number: "03",
-      title: "Pilot Implementation",
-      description: "Execute targeted pilot projects to validate approaches and demonstrate value before full-scale deployment.",
-      deliverables: ["Pilot Project Execution", "Performance Metrics", "Lessons Learned"]
-    },
-    {
-      number: "04",
-      title: "Scale & Optimize",
-      description: "Roll out successful solutions across the organization while continuously optimizing for maximum impact.",
-      deliverables: ["Full Deployment", "Training Programs", "Ongoing Optimization"]
+      number: '03',
+      emoji: '🚀',
+      title: 'Go Live & Train',
+      description: 'We deploy, train your team, and provide 30 days of support to ensure everything runs smoothly.',
+      timeline: 'Week 4',
+      deliverable: 'Your team using the new system'
     }
   ];
 
   return (
-    <section id="approach" className="py-32 bg-gray-950 text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, #0891b2 0%, transparent 50%), 
-                           radial-gradient(circle at 75% 75%, #3b82f6 0%, transparent 50%)`
-        }}></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <section id="approach" className="py-32 bg-gray-950 text-white scroll-mt-28 md:scroll-mt-32">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-4">
-            OUR METHODOLOGY
+            HOW IT WORKS
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-            Proven AI
+          <h2 className="text-4xl font-bold mb-6 leading-tight">
+            From Call to
             <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
-              Implementation
+              Working System
             </span>
-            Framework
+            in 30 Days
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Our systematic approach ensures successful AI adoption with minimal risk and maximum business impact.
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            No lengthy consulting engagements. No strategy documents. Just working automation that saves you time.
           </p>
         </div>
 
-        <div className="space-y-12 md:space-y-16">
-          {phases.map((phase, index) => (
-            <div key={index} className="group">
-              <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 lg:items-center">
+        <div className="space-y-16 mb-16">
+          {steps.map((step, index) => (
+            <div key={index}>
+              <div className="grid lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-2 text-center lg:text-left">
-                  <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-br from-teal-400 to-blue-400 bg-clip-text group-hover:scale-110 transition-transform duration-500">
-                    {phase.number}
+                  <div className="text-6xl font-bold text-transparent bg-gradient-to-br from-teal-400 to-blue-400 bg-clip-text">
+                    {step.number}
                   </div>
                 </div>
                 
-                <div className="lg:col-span-6 space-y-3 md:space-y-4 text-center lg:text-left">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold group-hover:text-teal-400 transition-colors duration-300">
-                    {phase.title}
-                  </h3>
-                  <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                    {phase.description}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center text-black text-2xl">
+                      {step.emoji}
+                    </div>
+                    <h3 className="text-2xl font-bold">{step.title}</h3>
+                  </div>
+                  <p className="text-gray-300">
+                    {step.description}
                   </p>
                 </div>
                 
                 <div className="lg:col-span-4">
-                  <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-4 md:p-6 group-hover:border-teal-400/30 transition-all duration-300">
-                    <h4 className="text-xs md:text-sm font-semibold text-teal-400 mb-3 md:mb-4 tracking-wide uppercase text-center lg:text-left">
-                      Key Deliverables
-                    </h4>
-                    <div className="space-y-2 md:space-y-3">
-                      {phase.deliverables.map((deliverable, idx) => (
-                        <div key={idx} className="flex items-center gap-2 md:gap-3 justify-center lg:justify-start">
-                          <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-teal-400 flex-shrink-0" />
-                          <span className="text-gray-300 text-xs md:text-sm">{deliverable}</span>
-                        </div>
-                      ))}
+                  <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-gray-400 uppercase">Timeline</span>
+                        <span className="text-teal-400 font-semibold">{step.timeline}</span>
+                      </div>
+                      <div className="border-t border-gray-800 pt-3">
+                        <span className="text-xs text-gray-400 uppercase block mb-2">You Get</span>
+                        <span className="text-white text-sm font-medium">{step.deliverable}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
-              {index < phases.length - 1 && (
-                <div className="flex justify-center mt-8 md:mt-12">
-                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-gray-600 rotate-90" />
+              {index < steps.length - 1 && (
+                <div className="flex justify-center mt-12">
+                  <div className="w-6 h-6 text-gray-600">↓</div>
                 </div>
               )}
             </div>
           ))}
+        </div>
+
+        <div className="bg-gradient-to-r from-teal-400/10 to-blue-400/10 border border-teal-400/20 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-4">Total Timeline: ~30 Days</h3>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Most projects go from first call to fully deployed in about a month. 
+            Simple workflows can be done in 2 weeks.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-semibold transition-all hover:bg-gray-100">
+              <span>Schedule Discovery Call</span>
+            </a>
+            <a href="tel:+18312304955" className="inline-flex items-center gap-2 border border-gray-600 text-white px-8 py-4 rounded-full font-semibold transition-all hover:border-teal-400">
+              <span>Or Call: (831) 230-4955</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

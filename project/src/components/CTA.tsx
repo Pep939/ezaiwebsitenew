@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -11,36 +10,47 @@ const CTA = () => {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-        <div className="inline-flex items-center gap-2 bg-teal-400/10 border border-teal-400/20 rounded-full px-6 py-3 mb-8">
-          <Sparkles className="w-5 h-5 text-teal-400" />
-          <span className="text-teal-400 font-semibold text-sm tracking-wide">READY TO TRANSFORM?</span>
-        </div>
-        
-        <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
-          Lead the AI Revolution
+        <h2 className="text-6xl font-bold mb-8 leading-tight">
+          Stop Wasting 20+ Hours
           <span className="block text-transparent bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text">
-            in Your Industry
+            Every Month
           </span>
         </h2>
         
-        <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
-          Join visionary leaders who are already leveraging AI to create unprecedented 
-          competitive advantages and drive exponential growth.
+        <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          Setup: $5,000-$10,000 one-time. Ongoing support & improvements: $500-$1,000/month (hosting, AI costs, maintenance).
+          Built specifically for your business in Monterey County.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="group bg-white text-black px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:bg-gray-100 hover:scale-105 flex items-center justify-center gap-3">
-            <span>Start Your AI Journey</span>
-            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <p className="text-3xl font-bold mb-2">$5K-$10K</p>
+            <p className="text-gray-400 text-sm">One-time setup</p>
+          </div>
+          
+          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <p className="text-3xl font-bold mb-2">30 Days</p>
+            <p className="text-gray-400 text-sm">From call to live</p>
+          </div>
+          
+          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
+            <p className="text-3xl font-bold mb-2">4-6 Months</p>
+            <p className="text-gray-400 text-sm">Typical ROI timeline</p>
+          </div>
+        </div>
+        
+        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-10 py-5 rounded-full font-bold text-lg transition-all hover:bg-gray-100 hover:scale-105">
+            Schedule a Call
           </a>
-          <a href="tel:+18883924385" className="group border-2 border-gray-600 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:border-teal-400 hover:bg-teal-400/10 flex items-center justify-center gap-3">
-            <span>Call Now: +1 888-392-4385</span>
+          <a href="tel:+18312304955" className="border-2 border-gray-600 text-white px-10 py-5 rounded-full font-bold text-lg transition-all hover:border-teal-400">
+            (831) 230-4955
           </a>
         </div>
         
-        <div className="mt-16 pt-16 border-t border-gray-800">
-          <p className="text-sm text-gray-400 text-center">
-            Let's discuss how AI can transform your specific business challenges
+        <div className="pt-12 border-t border-gray-800">
+          <p className="text-sm text-gray-400">
+            Serving property managers, accounting firms, vacation rentals, and service businesses in Monterey County
           </p>
         </div>
       </div>

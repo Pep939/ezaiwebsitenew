@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Phone, Menu, X } from 'lucide-react';
-import logo from '../assets/logo.png';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/ezai-logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,30 +19,24 @@ const Header = () => {
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
     } pt-16 md:pt-20 pb-6`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center overflow-visible pr-4 md:pr-8 relative z-0 h-14 w-14">
-          {/* Visually enlarge without changing layout height; absolute for precise alignment */}
-          <img
-            src={logo}
-            alt="EZ AI Solutions"
-            className={`absolute left-0 top-0 h-12 md:h-12 scale-[8] md:scale-[9] origin-top-left w-auto transition-transform duration-300 pointer-events-none z-20 -translate-x-[56px] md:-translate-x-[64px] -translate-y-[220px] md:-translate-y-[204px]`}
-          />
+        <div className="flex items-center">
+          <img src={logo} alt="EZ AI Solutions" className="h-12 w-auto" />
         </div>
         
-        <ul className="hidden lg:flex items-center gap-12 text-sm font-medium ml-16 md:ml-24 relative z-10">
+        <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
           <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">HOME</a></li>
-          <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONSULTING</a></li>
-          <li><a href="#approach" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">APPROACH</a></li>
-          <li><a href="#insights" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">SERVICES</a></li>
+          <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">WHAT WE BUILD</a></li>
+          <li><a href="#approach" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">HOW IT WORKS</a></li>
+          <li><a href="#insights" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">RESULTS</a></li>
           <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONTACT</a></li>
         </ul>
         
         <div className="hidden lg:flex items-center gap-6">
-          <a href="tel:+18883924385" className="flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">
-            <Phone className="w-4 h-4" />
-            <span className="text-sm">+1 888-392-4385</span>
+          <a href="tel:+18312304955" className="flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">
+            <span className="text-sm">(831) 230-4955</span>
           </a>
           <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-gray-100 hover:scale-105">
-            Book a Demo
+            Schedule a Call
           </a>
         </div>
 
@@ -59,17 +53,16 @@ const Header = () => {
         <div className="lg:hidden bg-black/95 backdrop-blur-xl border-t border-gray-800">
           <div className="px-6 py-8 space-y-6">
             <a href="#home" className="block text-gray-300 hover:text-white transition-colors">HOME</a>
-            <a href="#services" className="block text-gray-300 hover:text-white transition-colors">CONSULTING</a>
-            <a href="#approach" className="block text-gray-300 hover:text-white transition-colors">APPROACH</a>
-            <a href="#insights" className="block text-gray-300 hover:text-white transition-colors">SERVICES</a>
+            <a href="#services" className="block text-gray-300 hover:text-white transition-colors">WHAT WE BUILD</a>
+            <a href="#approach" className="block text-gray-300 hover:text-white transition-colors">HOW IT WORKS</a>
+            <a href="#insights" className="block text-gray-300 hover:text-white transition-colors">RESULTS</a>
             <a href="#contact" className="block text-gray-300 hover:text-white transition-colors">CONTACT</a>
             <div className="pt-4 border-t border-gray-800">
-              <a href="tel:+18883924385" className="flex items-center gap-2 text-teal-400 mb-4">
-                <Phone className="w-4 h-4" />
-                <span>+1 888-392-4385</span>
+              <a href="tel:+18312304955" className="flex items-center gap-2 text-teal-400 mb-4">
+                <span>(831) 230-4955</span>
               </a>
               <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm">
-                Book a Demo
+                Schedule a Call
               </a>
             </div>
           </div>
