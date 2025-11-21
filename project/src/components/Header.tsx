@@ -20,7 +20,7 @@ const Header = () => {
     } pt-0 pb-4`}>
       <nav className="max-w-7xl mx-auto px-8 md:px-12 flex justify-between items-center">
         <a href="#home" className="flex items-center self-center mr-16 md:mr-24 -mt-4">
-          <img src={logo} alt="EZAI Solutions" className="h-56 md:h-72 w-auto object-contain" />
+          <img src={logo} alt="EZAI Solutions" className="h-64 md:h-80 w-auto object-contain" />
         </a>
         
         <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
