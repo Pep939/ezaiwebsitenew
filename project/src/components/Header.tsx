@@ -18,8 +18,8 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
     } py-4`}>
-      <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center gap-8">
-        <a href="#home" className="flex items-center self-center pr-8">
+      <nav className="max-w-7xl mx-auto px-8 md:px-12 flex justify-between items-center">
+        <a href="#home" className="flex items-center self-center mr-16 md:mr-24">
           <img src={logo} alt="EZAI Solutions" className="h-52 md:h-64 w-auto object-contain" />
         </a>
         
