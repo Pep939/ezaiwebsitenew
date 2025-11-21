@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from '../assets/Gemini_Generated_Image_trp6o6f1rg6o6f1rg-removebg.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,9 +19,9 @@ const Header = () => {
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
     } pt-16 md:pt-20 pb-6`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="EZ AI Solutions" className="h-12 w-auto" />
-        </div>
+        <a href="#home" className="flex items-center">
+          <img src={logo} alt="EZAI Solutions" className="h-16 w-auto" />
+        </a>
         
         <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
           <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">HOME</a></li>
