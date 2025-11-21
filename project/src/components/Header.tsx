@@ -19,7 +19,7 @@ const Header = () => {
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
     } pt-0 pb-4`}>
       <nav className="max-w-7xl mx-auto px-8 md:px-12 flex justify-between items-center">
-        <a href="#home" className="flex items-center self-center mr-20 md:mr-32 -mt-6">
+        <a href="#home" className="flex items-center self-center mr-20 md:mr-32 -mt-8">
           <img src={logo} alt="EZAI Solutions" className="h-64 md:h-80 w-auto object-contain" />
         </a>
         
@@ -32,8 +32,8 @@ const Header = () => {
         </ul>
         
         <div className="hidden lg:flex items-center gap-6">
-          <a href="tel:+18312304955" className="flex items-center gap-2 text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">
-            <span className="text-sm">(831) 230-4955</span>
+          <a href="tel:+18312304955" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">
+            (831) 230-4955
           </a>
           <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-gray-100 hover:scale-105">
             Schedule a Call
@@ -58,8 +58,8 @@ const Header = () => {
             <a href="#insights" className="block text-gray-300 hover:text-white transition-colors">RESULTS</a>
             <a href="#contact" className="block text-gray-300 hover:text-white transition-colors">CONTACT</a>
             <div className="pt-4 border-t border-gray-800">
-              <a href="tel:+18312304955" className="flex items-center gap-2 text-teal-400 mb-4">
-                <span>(831) 230-4955</span>
+              <a href="tel:+18312304955" className="block text-gray-300 hover:text-white transition-colors mb-4">
+                (831) 230-4955
               </a>
               <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm">
                 Schedule a Call
