@@ -31,7 +31,7 @@ const Services = () => {
     {
       emoji: '🏖️',
       title: 'Vacation Rental Compliance',
-      price: '$7,500',
+      price: '$6,500 - $8,500',
       timeSaved: '20 hrs/month → 3 hrs/month',
       description: 'Monterey County permit tracking, TOT filing reminders, and regulatory compliance management.',
       features: [
@@ -44,7 +44,7 @@ const Services = () => {
     {
       emoji: '🔧',
       title: 'Service Business Operations',
-      price: '$5,000 - $6,500',
+      price: '$4,000 - $6,000',
       timeSaved: '15 hrs/month → 4 hrs/month',
       description: 'Lead qualification, appointment scheduling, and follow-up automation for contractors and service providers.',
       features: [
@@ -84,7 +84,7 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            One-time setup fee. Built specifically for your business. No monthly subscriptions for basic functionality.
+            One-time setup fee. Built specifically for your business.
           </p>
         </div>
         

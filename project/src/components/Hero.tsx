@@ -1,4 +1,5 @@
-import heroImage from '../assets/hero-image.jpg';
+import { ArrowRight } from 'lucide-react';
+import heroImage from '../assets/monterey-hero-clean.png';
 
 const Hero = () => {
   return (
