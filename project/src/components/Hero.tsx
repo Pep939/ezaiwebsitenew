@@ -2,7 +2,7 @@ import heroImage from '../assets/hero-image.jpg';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-black text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32 pt-32">
+    <section id="home" className="min-h-screen bg-black text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32 pt-24 md:pt-28">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-2 h-2 bg-teal-400 rounded-full"></div>

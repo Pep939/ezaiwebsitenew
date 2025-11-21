@@ -17,10 +17,10 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
-    } pt-16 md:pt-20 pb-6`}>
+    } py-4`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="flex items-center">
-          <img src={logo} alt="EZAI Solutions" className="h-16 w-auto" />
+          <img src={logo} alt="EZAI Solutions" className="h-20 md:h-24 w-auto" />
         </a>
         
         <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
