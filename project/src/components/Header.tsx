@@ -19,8 +19,8 @@ const Header = () => {
       isScrolled ? 'bg-black/95 backdrop-blur-xl' : 'bg-transparent'
     } py-4`}>
       <nav className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="flex items-center -ml-2">
-          <img src={logo} alt="EZAI Solutions" className="h-52 md:h-64 w-auto" />
+        <a href="#home" className="flex items-center self-center">
+          <img src={logo} alt="EZAI Solutions" className="h-52 md:h-64 w-auto object-contain" />
         </a>
         
         <ul className="hidden lg:flex items-center gap-12 text-sm font-medium">
