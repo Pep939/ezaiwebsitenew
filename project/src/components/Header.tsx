@@ -31,8 +31,8 @@ const Header = () => {
           <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide">CONTACT</a></li>
         </ul>
         
-        <div className="hidden lg:flex items-center gap-6">
-          <a href="tel:+18312304955" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">
+        <div className="hidden lg:flex items-center gap-8 ml-8">
+          <a href="tel:+18312304955" className="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide whitespace-nowrap">
             (831) 230-4955
           </a>
           <a href="https://cal.com/ezaisolutions/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-gray-100 hover:scale-105">
