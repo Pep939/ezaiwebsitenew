@@ -1,65 +1,124 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <footer className="bg-gray-950 text-white border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-3 gap-12 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
+
+          {/* LEFT COLUMN - Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-blue-400 rounded-xl flex items-center justify-center text-black font-bold">
-                AI
-              </div>
-              <div className="text-2xl font-bold">
+            <div className="mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-1">
                 EZ<span className="text-teal-400">AI</span> Solutions
-              </div>
+              </h3>
+              <p className="text-lg text-gray-400">AI Workflow Automation</p>
             </div>
-            <p className="text-gray-300 mb-8">
-              Custom AI automation & 24/7 receptionists for Monterey County businesses. Stop wasting time on manual work.
+
+            <p className="text-base sm:text-lg text-gray-300 mb-6">
+              Serving Property Managers & Insurance Agencies in Monterey County
             </p>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6 text-teal-400">What We Build</h3>
-            <div className="space-y-3 text-gray-300">
-              <p>Property Management Automation</p>
-              <p>Vacation Rental Compliance</p>
-              <p>Accounting Firm Automation</p>
-              <p>Service Business Operations</p>
-              <p>AI Receptionist & Phone Automation</p>
+
+            <div className="text-gray-400">
+              <p className="mb-1">Monterey • Salinas • Carmel</p>
+              <p>Pacific Grove • Marina • Seaside</p>
             </div>
           </div>
-          
+
+          {/* MIDDLE COLUMN - Navigation */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-teal-400">Contact</h3>
-            <div className="space-y-4 text-gray-300">
+            <div className="mb-8">
+              <h4 className="text-lg font-bold text-white mb-4">WHO WE SERVE</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#property-managers" className="text-gray-300 hover:text-teal-400 transition-colors">
+                    Property Managers
+                  </a>
+                </li>
+                <li>
+                  <a href="#insurance-agencies" className="text-gray-300 hover:text-teal-400 transition-colors">
+                    Insurance Agencies
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-bold text-white mb-4">COMPANY</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-it-works" className="text-gray-300 hover:text-teal-400 transition-colors">
+                    How It Works
+                  </a>
+                </li>
+                <li>
+                  <a href="#pricing" className="text-gray-300 hover:text-teal-400 transition-colors">
+                    Pricing
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN - Contact */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-4">CONTACT</h4>
+
+            <div className="space-y-4 mb-6">
               <div>
-                <p className="font-medium">Email</p>
-                <a href="mailto:admin@ezaisolutions.com" className="hover:text-teal-400 transition-colors">
+                <p className="text-sm text-gray-400 mb-1">Email</p>
+                <a
+                  href="mailto:admin@ezaisolutions.com"
+                  className="text-gray-300 hover:text-teal-400 transition-colors"
+                >
                   admin@ezaisolutions.com
                 </a>
               </div>
+
               <div>
-                <p className="font-medium">Phone</p>
-                <a href="tel:+18312304955" className="hover:text-teal-400 transition-colors">
+                <p className="text-sm text-gray-400 mb-1">Phone</p>
+                <a
+                  href="tel:+18312304955"
+                  className="text-gray-300 hover:text-teal-400 transition-colors"
+                >
                   (831) 230-4955
                 </a>
               </div>
-              <div>
-                <p className="font-medium">Service Area</p>
-                <p>Monterey County, California</p>
-              </div>
+            </div>
+
+            <a
+              href="https://cal.com/ezaisolutions/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full sm:w-auto bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all hover:bg-teal-400 hover:shadow-lg hover:shadow-teal-500/30 mb-6"
+            >
+              Book Demo
+            </a>
+
+            <div>
+              <p className="text-sm text-gray-400">
+                Hours: Monday-Friday 8am-6pm PST
+              </p>
             </div>
           </div>
+
         </div>
-        
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            &copy; 2025 EZ AI Solutions. All rights reserved.
+
+        {/* BOTTOM BAR */}
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+          <p className="text-gray-400">
+            © 2025 EZAI Solutions. All rights reserved.
           </p>
-          <div className="flex gap-8 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+          <div className="flex gap-6 sm:gap-8">
+            <a href="#privacy" className="text-gray-400 hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#terms" className="text-gray-400 hover:text-white transition-colors">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

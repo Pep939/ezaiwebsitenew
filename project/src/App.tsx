@@ -1,9 +1,14 @@
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Services from './components/Services';
-import Approach from './components/Approach';
-import Insights from './components/Insights';
+import About from './components/About';
+import WhoWeServe from './components/WhoWeServe';
+import PropertyManagementDetails from './components/PropertyManagementDetails';
+import InsuranceDetails from './components/InsuranceDetails';
+import HowItWorks from './components/HowItWorks';
+import Pricing from './components/Pricing';
+import Credibility from './components/Credibility';
+import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -40,9 +45,14 @@ function App() {
     <div className="min-h-screen bg-black">
       <Header />
       <Hero />
-      <Services />
-      <Approach />
-      <Insights />
+      <About />
+      <WhoWeServe />
+      <PropertyManagementDetails />
+      <InsuranceDetails />
+      <HowItWorks />
+      <Pricing />
+      <Credibility />
+      <FAQ />
       <CTA />
       <Contact />
       <Footer />
